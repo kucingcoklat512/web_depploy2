@@ -9,6 +9,7 @@ app.register_blueprint(room_bp)
 app.register_blueprint(reservation_bp)
 app.register_blueprint(payment_bp)
 
-if __name__ == '__main__':
-    db.create_all()
-    app.run(debug=True)
+db.create_all()
+
+"""if __name__ == '__main__':
+    app.run(debug=True)"""
